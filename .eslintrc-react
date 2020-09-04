@@ -12,7 +12,13 @@
   "globals": {
     "fetch": false
   },
+  "plugins": [
+    "react-hooks"
+  ],
   "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-max-props-per-line": 1,
     "semi": 2,
     "indent": [
       "error",
@@ -40,6 +46,7 @@
         ]
       }
     ],
+    "operator-linebreak": 0,
     "import/no-unresolved": 0,
     "no-tabs": 0,
     "comma-dangle": [
@@ -65,6 +72,10 @@
       }
     ],
     "import/no-extraneous-dependencies": 0,
-    "class-methods-use-this": 0
+    "class-methods-use-this": 0,
+    "linebreak-style": "off",
+    "arrow-parens": ["error", "as-needed", {
+      "requireForBlockBody": true
+    }]
   }
 }
